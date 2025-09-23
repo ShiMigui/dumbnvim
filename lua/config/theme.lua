@@ -1,13 +1,12 @@
 local M = {}
 
-M.colors = {
+local c = {
 	fg = "#FFFFFF",
 	bg = "#000000",
 	primary = "#FF5555",
 	secondary = "#50FA7B",
 	tertiary = "#BD93F9",
 }
-local c, hl = M.colors, vim.api.nvim_set_hl
 
 M.cfg = { fg = c.fg, bg = c.bg }
 
@@ -22,6 +21,7 @@ M.lualine = {
 	},
 }
 
+local hl = vim.api.nvim_set_hl
 M.set_hl = function()
 	hl(0, "Normal", M.cfg)
 	hl(0, "NormalFloat", M.cfg)

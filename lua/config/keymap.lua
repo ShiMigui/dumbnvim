@@ -37,7 +37,6 @@ M.telescope = function()
 	M.map("n", "<leader>fh", tb.help_tags, "Telescope help tags")
 end
 
-M.map("v", "<space>x", "<cmd>.lua<cr>", "Execute Lua code in selection")
 M.map("n", "<Esc>", "<cmd>nohlsearch<cr>", "Clear search highlight")
 M.map("i", "jk", "<Esc>", "Exit insert mode")
 
