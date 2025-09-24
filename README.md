@@ -1,6 +1,8 @@
 # Dumb Nvim
 
-A minimal and extensible [Neovim](https://neovim.io/) configuration. The goal of this repo is to provide a simple, clean, and easy-to-understand setup built with [lazy.nvim](https://github.com/folke/lazy.nvim).
+A minimal and extensible [Neovim](https://neovim.io/) configuration.
+
+The goal of this repo is to provide a simple, clean, and easy-to-understand setup built with [lazy.nvim](https://github.com/folke/lazy.nvim).
 
 ## Preview
 
@@ -30,6 +32,12 @@ To run this configuration, you need:
 * [treesitter-cli](https://github.com/tree-sitter/tree-sitter)
 * [cmake](https://cmake.org/)
 * **pip / npm / cargo** installed (or all of them) - used by [mason.nvim](https://github.com/williamboman/mason.nvim) to manage LSPs, DAPs, and formatters.
+
+### Example installation on Arch (I USE ARCH BTW, literally)
+
+```bash
+sudo pacman -S --needed luarocks tree-sitter-cli npm cargo cmake
+```
 
 ## Project Tree
 
@@ -69,4 +77,4 @@ To run this configuration, you need:
 * [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) → Icons
 * [nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua) → Highlight color codes
 
-My english is not good, so if have any issues contact me! ;)
+My english is not good, so if find any issues contact me! ;)
