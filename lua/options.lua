@@ -1,7 +1,7 @@
 local M = {}
 
 M.setup = function()
-	local keymaps, colors = require("config.keymap"), require("config.theme")
+	local keymaps = require("config.keymap")
 	require("lazy").setup({
 		spec = {
 			"nvim-tree/nvim-web-devicons",
@@ -12,7 +12,7 @@ M.setup = function()
 			require("plugin.nvim-cmp"),
 			require("plugin.mason-lspconfig")(keymaps.on_attach_lsp),
 			require("plugin.mini"),
-			require("plugin.lualine")(colors.lualine, keymaps.lualine_macro),
+			require("plugin.lualine")(keymaps.lualine_macro),
 			require("plugin.nvim-colorizer"),
 			{
 				"folke/lazydev.nvim",
@@ -22,7 +22,6 @@ M.setup = function()
 		},
 		-- checker = { enabled = true },
 	})
-	vim.api.nvim_create_autocmd({ "VimEnter", "ColorScheme" }, { callback = colors.set_hl })
 end
 
 M.lazy_clone = function()
