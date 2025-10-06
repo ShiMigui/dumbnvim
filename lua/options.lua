@@ -19,6 +19,7 @@ M.setup = function()
 				ft = "lua",
 				opts = { library = { { path = "${3rd}/luv/library", words = { "vim%.uv" } } } },
 			},
+			{ "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {} },
 		},
 		-- checker = { enabled = true },
 	})

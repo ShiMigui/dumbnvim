@@ -4,6 +4,8 @@ local main_cfg = require("options")
 main_cfg.lazy_clone()
 main_cfg.setup()
 
+vim.cmd("colorscheme tokyonight-night") -- This is the theme name; change or remove it if needed
+
 vim.diagnostic.config({ signs = true, underline = true, virtual_text = true, update_in_insert = true })
 
 local o = vim.o
